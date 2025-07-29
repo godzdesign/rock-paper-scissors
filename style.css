@@ -1,0 +1,48 @@
+:root {
+    --primary: #F2C57C;
+    --secondary: #DDAE7E;
+    --cambridge: #7FB685;
+    --background: #426A5A;
+    --button: #EF6F6C;
+    /* background-color: var(--primary); */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic";
+}
+
+body {
+    background-color: var(--background);
+}
+
+#title {
+    font-size: 80px;
+    color: var(--primary);
+    text-align: center;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    user-select: none;
+}
+
+#startbtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 250px;
+    height: 70px;
+    font-size: 40px;
+    color: var(--primary);
+    border: 3px solid var(--secondary);
+    background-color: var(--button);
+    border-radius: 20px;
+}
+
+#startbtn:active {
+    background-color: var(--cambridge);
+}
