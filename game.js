@@ -33,6 +33,7 @@ function playerChoice(choice) {
     document.getElementById("result").style.display = "block"
     document.getElementById("againBtn").style.display = "block"
     document.getElementById("vs").style.display = "block"
+    document.getElementById("question").style.display = "none";
 
     if (choice === computerChoice) {
         result = "It's a Draw!";
