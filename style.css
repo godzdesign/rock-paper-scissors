@@ -43,6 +43,11 @@ body {
     border-radius: 20px;
 }
 
+#startbtn:hover {
+    box-shadow: 0 0 55px var(--button);
+    transition: 0.2s ease;
+}
+
 #startbtn:active {
     background-color: var(--cambridge);
 }

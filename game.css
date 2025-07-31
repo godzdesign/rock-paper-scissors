@@ -22,8 +22,209 @@ body {
     font-size: 50px;
     color: var(--primary);
     text-align: center;
-    position: relative;
+    position: fixed;
+    justify-self: center;
     top: 20px;
-    margin: 0 auto;
+    user-select: none;
+}
+
+#question {
+    font-size: 30px;
+    color: var(--secondary);
+    text-align: center;
+    position: fixed;
+    justify-self: center;
+    top: 150px;
+    user-select: none;
+}
+
+#goBackBtn {
+    height: 35px;
+    width: 35px;
+    background-image: url(Icons/backArrow.svg);
+    background-color: #EF6F6C;
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+
+    position: fixed;
+    left: 30px;
+    top: 30px;
+}
+
+#goBackBtn:hover {
+    box-shadow: 0 0 15px var(--button);
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}
+
+#goBackBtn:active {
+    background-color: var(--cambridge);
+}
+
+#playerChoice {
+    position: fixed;
+    justify-self: center;
+    top: 40%;
+    display: flex;
+    column-gap: 100px;
+}
+
+#rock-btn {
+    width: 175px;
+    height: 175px;
+    background-image: url(Icons/handRock.svg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--button);
+    border: 3px solid var(--secondary);
+    border-radius: 50%;
+}
+
+#rock-btn:hover {
+    box-shadow: 0 0 55px var(--button);
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}
+
+#rock-btn:active {
+    background-color: var(--cambridge);
+}
+
+#paper-btn {
+    width: 175px;
+    height: 175px;
+    background-image: url(Icons/handPaper.svg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--button);
+    border: 3px solid var(--secondary);
+    border-radius: 50%;
+}
+
+#paper-btn:hover {
+    box-shadow: 0 0 55px var(--button);
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}
+
+#paper-btn:active {
+    background-color: var(--cambridge);
+}
+
+#scissors-btn {
+    width: 175px;
+    height: 175px;
+    background-image: url(Icons/handScissors.svg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--button);
+    border: 3px solid var(--secondary);
+    border-radius: 50%;
+}
+
+#scissors-btn:hover {
+    box-shadow: 0 0 55px var(--button);
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}
+
+#scissors-btn:active {
+    background-color: var(--cambridge);
+}
+
+/* #battleContainer {
+    position: fixed;
+    justify-self: center;
+    top: 40%;
+    display: flex;
+    column-gap: 100px;
+    justify-content: start;
+    width: 600px;
+    background-color: aqua;
+} */
+
+#battleContainer {
+    position: fixed;
+    justify-self: center;
+    top: 40%;
+    display: flex;
+    column-gap: 365px;
+    justify-content: start;
+    width: 725px;
+    height: 180px;
+    background-color: var(--background);
+}
+
+#playerSide {
+    width: 180px;
+    height: 180px;
+    /* background-color: black; */
+}
+
+#compSide {
+    width: 180px;
+    height: 180px;
+    /* background-color: red; */
+}
+
+#vs {
+    font-weight: 550;
+    color: var(--primary);
+    font-size: 40px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    user-select: none;
+}
+
+#result {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+    user-select: none;
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: 550;
+    color: var(--secondary);
+}
+
+#againBtn {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 550;
+    color: var(--primary);
+    background-color: var(--button);
+    border-radius: 20px;
+    border: 3px solid var(--secondary);
+}
+
+
+#playerScore {
+    font-size: 30px;
+    position: fixed;
+    top: 70%;
+    left: 22%;
+    color: var(--primary);
+    user-select: none;
+}
+
+#computerScore {
+    font-size: 30px;
+    position: fixed;
+    top: 70%;
+    left: 69%;
+    color: var(--primary);
     user-select: none;
 }

@@ -3,13 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamemenu</title>
+    <title>Game-Menu</title>
     <link rel="stylesheet" href="game.css">
     <script defer src="game.js"></script>
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-    <h1 id="gameTitle">Stein Schere Papier</h1>
+    <h1 id="gameTitle">Rock Paper Scissors</h1>
+    <h2 id="question">What are you chosing?</h2>
+    <button id="goBackBtn" onclick="goBack()"></button>
     
+    <div class="playerChoice" id="playerChoice">
+        <button id="rock-btn" onclick="playerChoice('rock')"></button>
+        <button id="paper-btn" onclick="playerChoice('paper')"></button>
+        <button id="scissors-btn" onclick="playerChoice('scissors')"></button>
+    </div>
+
+        <!-- Battlefield -->
+    <div id="battleContainer" style="display: none;">
+        <!-- PlayerSide -->
+        <div id="playerSide">
+             <div id="player-choice"> <!-- Here goes the player choice -->
+
+            </div>
+        </div>
+
+        <!-- ComputerSide -->
+        <div id="compSide">
+            <div id="computer-choice"> <!-- Here goes the comp choice -->
+
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <p id="vs" style="display: none;">VS</p>
+    </div>
+
+    <div>
+        <p id="result" style="display: none;">Result</p>
+    </div>
+
+    <div>
+        <button id="againBtn" style="display: none;" onclick="playAgain()">Play Again</button>
+    </div>
+    
+
 </body>
 </html>
