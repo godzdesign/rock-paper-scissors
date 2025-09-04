@@ -19,12 +19,12 @@ body {
 }
 
 #title {
-    font-size: 80px;
+    font-size: 5em;
     color: var(--primary);
     text-align: center;
-    position: relative;
-    top: 20px;
-    margin: 0 auto;
+    position: fixed;
+    top: 5%;
+    justify-self: center;
     user-select: none;
 }
 
@@ -33,7 +33,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     width: 250px;
     height: 70px;
     font-size: 40px;
@@ -41,11 +40,15 @@ body {
     border: 3px solid var(--secondary);
     background-color: var(--button);
     border-radius: 20px;
+    transition: all 0.2s;
 }
 
 #startbtn:hover {
     box-shadow: 0 0 55px var(--button);
     transition: 0.2s ease;
+    width: 260px;
+    height: 75px;
+    font-size: 42px;
 }
 
 #startbtn:active {

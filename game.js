@@ -43,7 +43,7 @@ function playerChoice(choice) {
         (choice === 'paper' && computerChoice === 'rock') 
         
     ) {
-        result = "You`ve Won!";
+        result = "You've Won!";
         playerScore++;
     } else {
         result = "Computer wins!";
